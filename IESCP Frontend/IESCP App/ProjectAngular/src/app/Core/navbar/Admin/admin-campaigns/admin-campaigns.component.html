@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <h2>Admin Campaigns</h2>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let campaign of campaigns">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">{{ campaign.campaignName }}</h5>
+            <p class="card-text">Description: {{ campaign.description }}</p>
+            <p class="card-text">Start Date: {{ campaign.start_date | date }}</p>
+            <p class="card-text">End Date: {{ campaign.end_date | date }}</p>
+            <p class="card-text">Budget: {{ campaign.budget }}</p>
+            <p class="card-text">Visibility: {{ campaign.visibility }}</p>
+            <p class="card-text">Niche: {{ campaign.compNiche }}</p>
+            <p class="card-text">Goals: {{ campaign.goals }}</p>
+            <p class="card-text">Flagged: {{ campaign.isFlagged ? 'Yes' : 'No' }}</p>
+            <button *ngIf="!campaign.isFlagged" class="btn btn-danger" (click)="flagCampaign(campaign.campaignId)">Flag</button>
+            <button *ngIf="campaign.isFlagged" class="btn btn-success" (click)="unflagCampaign(campaign.campaignId)">Unflag</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

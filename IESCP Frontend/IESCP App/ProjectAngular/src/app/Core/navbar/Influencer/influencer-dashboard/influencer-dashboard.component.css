@@ -1,0 +1,147 @@
+
+  body {
+    background: url('https://pqs.pe/wp-content/uploads/2021/11/what-to-consider-when-launching-influencer-marketing-campaigns1-1160x609.png') no-repeat center center/cover;
+    font-family: 'Lato', sans-serif;
+    height: 120vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: rgb(15, 15, 15);
+    padding-top: 50px;
+}
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+    padding-right: 130px;
+}
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+  :host ::ng-deep .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 10%;
+    justify-content: space-evenly;
+    
+  }
+  
+  :host ::ng-deep .card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    transition: height 0.6s;
+  }
+  
+  :host ::ng-deep .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  /* :host ::ng-deep .card:hover .card-inner {
+    transform: rotateY(180deg);
+  } */
+  
+  /* :host ::ng-deep .card-front, :host ::ng-deep .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  } */
+  
+  :host ::ng-deep .card-front {
+    background: linear-gradient(135deg, hsl(0, 0%, 9%) 0%, #fda085 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* :host ::ng-deep .card-back {
+    background: linear-gradient(135deg, #534743 0%, #f6d365 100%);
+    color: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  } */
+  
+  :host ::ng-deep .card:hover {
+    height: auto; /* Allow the card to expand if content exceeds the initial height */
+  }
+  
+  :host ::ng-deep .card-content {
+    margin-bottom: 20px;
+  }
+  
+  :host ::ng-deep .ad-requests {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    animation: dropdown 0.5s forwards;
+  }
+  
+  :host ::ng-deep .card-back .ad-requests {
+    display: flex;
+  }
+  
+  @keyframes dropdown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  :host ::ng-deep .accept-btn, :host ::ng-deep .reject-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  :host ::ng-deep .accept-btn:hover {
+    background-color: #45a049;
+  }
+  
+  :host ::ng-deep .reject-btn {
+    background-color: #f44336;
+  }
+  
+  :host ::ng-deep .reject-btn:hover {
+    background-color: #e53935;
+  }

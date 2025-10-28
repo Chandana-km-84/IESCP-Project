@@ -1,0 +1,106 @@
+
+
+
+
+<div class="section" style="background-color: rgb(171, 183, 193);">
+    <div class="container">
+        <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-2">
+                <div class="section pb-9 pt-9 pt-sm-2 text-center">
+                    <h6 class="mb-0 pb-3"style="color: black;" ><span>Log In </span><span>Sign Up</span></h6>
+                    <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" (change)="toggleForms()"/>
+                    <label for="reg-log"></label>
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <div class="card-front" [class.active]="isLoginActive">
+                                <div class="center-wrap">
+                                    <form #loginForm="ngForm" (ngSubmit)="onLoginSubmit()">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Influencer</h4>
+                                            <h4 class="mb-4 ">Log In</h4>
+                                            <div class="form-group">
+                                                <input type="text" name="logename" [(ngModel)]="login.userName" class="form-style" placeholder="Username" id="logename" autocomplete="off">
+                                                <i class="input-icon uil uil-at"></i>
+                                            </div>    
+                                            <div class="form-group mt-2">
+                                                <input type="password" name="logpass" [(ngModel)]="login.password" class="form-style" placeholder="Password" id="logpass" autocomplete="off">
+                                                <i class="input-icon uil uil-lock-alt"></i>
+                                            </div>
+                                            <button type="submit" class="btn mt-4">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card-back" [class.active]="!isLoginActive">
+                                <div class="center-wrap">
+                                    <form #signupForm="ngForm" (ngSubmit)="onSignupSubmit()">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Sign Up</h4>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" name="logname" [(ngModel)]="signup.userName" class="form-style" placeholder="Username" id="logname" autocomplete="off">
+                                                        <i class="input-icon uil uil-user"></i>
+                                                    </div>    
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mt-2">
+                                                        <input type="password" name="logpass" [(ngModel)]="signup.password" class="form-style" placeholder="Password" id="logpassw" autocomplete="off">
+                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group mt-2">
+                                                        <input type="email" name="logemail" [(ngModel)]="signup.email" class="form-style" placeholder="Email" id="logemail" autocomplete="off">
+                                                        <i class="input-icon uil uil-at"></i>
+                                                    </div>    
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mt-2">
+                                                        <input type="tel" name="logphone" [(ngModel)]="signup.phoneNumber" class="form-style" placeholder="PhoneNumber" id="logphone" autocomplete="off">
+                                                        <i class="input-icon uil uil-phone"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group mt-2">
+                                                        <input type="text" name="loginfluencer" [(ngModel)]="signup.influencerName" class="form-style" placeholder="InfluencerName" id="loginfluencer" autocomplete="off">
+                                                        <i class="input-icon uil uil-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mt-2">
+                                                        <input type="text" name="logcategory" [(ngModel)]="signup.category" class="form-style" placeholder="Category" id="logcategory" autocomplete="off">
+                                                        <i class="input-icon uil uil-briefcase"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group mt-2">
+                                                        <input type="text" name="logniche" [(ngModel)]="signup.niche" class="form-style" placeholder="Niche" id="logniche" autocomplete="off">
+                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group mt-2">
+                                                        <input type="text" name="logreach" [(ngModel)]="signup.reach" class="form-style" placeholder="Reach" id="logreach" autocomplete="off">
+                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn mt-4">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+</div>

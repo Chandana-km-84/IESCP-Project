@@ -1,0 +1,56 @@
+<body>
+ 
+
+<div class="container" style="margin-bottom: 50px;">
+    <pre>     </pre>
+</div>
+
+
+  <div class="container mt-5">
+    <h2>Influencers</h2>
+    <input type="text" class="form-control mb-3" placeholder="Search Influencers, Category, Niche" [(ngModel)]="searchText" (input)="filterInfluencers()">
+    <div class="row">
+      <div *ngFor="let influencer of filteredInfluencers" class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ influencer.influencerName }}</h5>
+            <p class="card-text"><strong>Category:</strong> {{ influencer.category }}</p>
+            <p class="card-text"><strong>Niche:</strong> {{ influencer.niche }}</p>
+            <p class="card-text"><strong>Reach:</strong> {{ influencer.reach }}</p>
+            <button class="btn btn-primary" (click)="openAssignAdRequestModal(influencer)">Assign Ad Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Assign Ad Request Modal -->
+  <div *ngIf="isAssignAdRequestModalOpen" class="modal fade show" tabindex="-1" style="display: block;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Assign Ad Request to {{ selectedInfluencer.influencerName }}</h5>
+          <button type="button" class="close" (click)="closeAssignAdRequestModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="onAssignAdRequestSubmit()">
+            <div class="form-group">
+              <label for="adRequest">Select Ad Request:</label>
+              <select id="adRequest" [(ngModel)]="selectedAdRequestId" name="adRequest" class="form-control" required>
+                <ng-container *ngFor="let adRequest of adRequests">
+                  <option *ngIf="adRequest.status !== 'Accepted'" [value]="adRequest.adId">
+                    {{ adRequest.adId }} - {{ adRequest.adName }}
+                  </option>
+                  <!-- <option #noAdRequests value="No AdRequests">No AdRequests</option> -->
+                </ng-container>
+
+              </select>
+            </div>
+            <button type="submit" class="btn btn-success">Assign</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+</body>

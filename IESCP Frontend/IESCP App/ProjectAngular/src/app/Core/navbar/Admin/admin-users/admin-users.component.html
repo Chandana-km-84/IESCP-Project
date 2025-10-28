@@ -1,0 +1,18 @@
+<div class="container mt-4">
+    <h2>Admin Users</h2>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let user of users">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">{{ user.userName }}</h5>
+            <p class="card-text">Email: {{ user.email }}</p>
+            <p class="card-text">Phone: {{ user.phoneNumber }}</p>
+            <p class="card-text">Role: {{ user.role === 1 ? 'Influencer' : 'Sponsor' }}</p>
+            <p class="card-text">Flagged: {{ user.isFlagged ? 'Yes' : 'No' }}</p>
+            <button *ngIf="!user.isFlagged" class="btn btn-danger" (click)="flagUser(user.userId)">Flag</button>
+            <button *ngIf="user.isFlagged" class="btn btn-success" (click)="unflagUser(user.userId)">Unflag</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

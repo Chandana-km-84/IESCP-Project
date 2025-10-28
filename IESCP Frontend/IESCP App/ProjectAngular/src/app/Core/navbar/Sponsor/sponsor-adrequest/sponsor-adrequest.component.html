@@ -1,0 +1,79 @@
+
+  <div class="container" style="margin-bottom: 50px;">
+    <pre>     </pre>
+</div>
+<div class="container mt-5">
+    <h2>Ad Requests for Campaign {{ campaignId }}</h2>
+    <button class="btn btn-primary mb-3" (click)="openAddAdRequestModal()">Create Ad Request</button>
+    <div class="row">
+      <div *ngFor="let adRequest of adRequests" class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ adRequest.adName }}</h5>
+            <p class="card-text">{{ adRequest.adDescription }}</p>
+            <p><strong>Amount:</strong> {{ adRequest.amount }}</p>
+            <p><strong>Status:</strong> {{ adRequest.status }}</p>
+            <button class="btn btn-secondary" (click)="openEditAdRequestModal(adRequest)">Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Add Ad Request Modal -->
+  <div *ngIf="isAddAdRequestModalOpen" class="modal fade show" tabindex="-1" style="display: block;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Create Ad Request</h5>
+          <button type="button" class="close" (click)="closeAddAdRequestModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="onAdRequestSubmit()">
+            <div class="form-group">
+              <label for="adName">Ad Name:</label>
+              <input type="text" id="adName" [(ngModel)]="newAdRequest.adName" name="adName" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="adDescription">Ad Description:</label>
+              <input type="text" id="adDescription" [(ngModel)]="newAdRequest.adDescription" name="adDescription" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="amount">Amount:</label>
+              <input type="number" id="amount" [(ngModel)]="newAdRequest.amount" name="amount" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Ad Request Modal -->
+  <div *ngIf="isEditAdRequestModalOpen" class="modal fade show" tabindex="-1" style="display: block;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Ad Request</h5>
+          <button type="button" class="close" (click)="closeEditAdRequestModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="onEditAdRequestSubmit()">
+            <div class="form-group">
+              <label for="editAdName">Ad Name:</label>
+              <input type="text" id="editAdName" [(ngModel)]="selectedAdRequest.adName" name="editAdName" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="editAdDescription">Ad Description:</label>
+              <input type="text" id="editAdDescription" [(ngModel)]="selectedAdRequest.adDescription" name="editAdDescription" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="editAmount">Amount:</label>
+              <input type="number" id="editAmount" [(ngModel)]="selectedAdRequest.amount" name="editAmount" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

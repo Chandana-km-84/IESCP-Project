@@ -1,0 +1,74 @@
+<div class="container" style="margin-bottom: 50px;">
+    <pre>     </pre>
+</div>
+<div class="container mt-5">
+    <h2>Ad Requests</h2>
+    <div class="row">
+      <div *ngFor="let adRequest of adRequests" class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ adRequest.adName }}</h5>
+            <p class="card-text">{{ adRequest.adDescription }}</p>
+            <p><strong>Amount:</strong> {{ adRequest.amount }}</p>
+            <p><strong>Status:</strong> {{ adRequest.status }}</p>
+            <div *ngIf="adRequest.status === 'Accepted'">
+              <button class="btn btn-primary" (click)="openRateModal(adRequest)">Rate</button>
+              <button class="btn btn-success" (click)="openPayModal(adRequest)">Pay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div *ngIf="isRateModalOpen" class="modal fade show" tabindex="-1" style="display: block;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Rate Influencer for Ad Request</h5>
+          <button type="button" class="close" (click)="closeRateModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="onRateSubmit()">
+            <div class="form-group">
+              <label for="ratingValue">Rating:</label>
+              <input type="number" id="ratingValue" [(ngModel)]="ratingValue" name="ratingValue" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea id="comment" [(ngModel)]="comment" name="comment" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div *ngIf="isPayModalOpen" class="modal fade show" tabindex="-1" style="display: block;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Make Payment for Ad Request</h5>
+          <button type="button" class="close" (click)="closePayModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="onPaySubmit()">
+            <div class="form-group">
+              <label for="amount">Amount:</label>
+              <input type="number" id="amount" [(ngModel)]="paymentAmount" name="amount" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="paymentMethod">Payment Method:</label>
+              <input type="text" id="paymentMethod" [(ngModel)]="paymentMethod" name="paymentMethod" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="transactionId">Transaction ID:</label>
+              <input type="text" id="transactionId" [(ngModel)]="transactionId" name="transactionId" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

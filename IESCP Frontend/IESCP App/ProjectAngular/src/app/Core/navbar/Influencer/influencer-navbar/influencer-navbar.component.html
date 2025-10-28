@@ -1,0 +1,21 @@
+<nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">Influencer</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a routerLink="/influencer/home">Home</a></li>
+        <li><a routerLink="/influencer/profile">Profile</a></li>
+        <li>
+          <a routerLink="/influencer/campaign" class="desktop-item">Campaigns</a>
+        </li>
+        <li><a routerLink="/influencer/updateRequest">Update Request</a></li>
+        <li><a routerLink="/influencer/myPayments">My Payments</a></li>
+        <li><a routerLink="/influencer/myRatings">My Ratings</a></li>
+        
+        <li><a (click)="logout()">Logout</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>

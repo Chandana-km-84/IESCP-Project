@@ -1,0 +1,24 @@
+
+  <div style="margin-bottom: 60px;">
+    <pre>    </pre>
+</div>
+<div class="container mt-4">
+    <h2>Influencer Ratings</h2>
+    <div *ngIf="ratings && ratings.length > 0; else noRatings">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let rating of ratings">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rating ID: {{ rating.ratingId }}</h5>
+                        <p class="card-text">Ad Request ID: {{ rating.adRequestId }}</p>
+                        <p class="card-text">Rating Value: {{ rating.ratingValue }}</p>
+                        <p class="card-text">Comment: {{ rating.comment }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #noRatings>
+        <p>No ratings available.</p>
+    </ng-template>
+</div>

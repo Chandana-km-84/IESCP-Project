@@ -1,0 +1,74 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Lato', sans-serif;
+}
+.header {
+    height: 100vh;
+    background: url('https://grin.co/wp-content/uploads/2022/08/IM_Influencer_Marketing_Terms_2022-Q3-07_featured1.webp') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* justify-content: center; */
+    color: rgb(22, 21, 21);
+    text-align:start;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: -20px;
+}
+.header h1 {
+    font-size: 4em;
+    margin-top: 15px;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+.header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    animation: slideInFromRight 1s ease-in-out;
+    text-align: left;
+}
+.feature, .benefit, .testimonial, .cta, .about, .contact {
+    margin: 50px 0;
+    animation: fadeInUp 1s ease-in-out;
+}
+.feature-icon, .benefit-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: rotateIn 1s ease-in-out;
+}
+.cta a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.cta a:hover {
+    background-color: #0056b3;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes rotateIn {
+    from { transform: rotate(-360deg); }
+    to { transform: rotate(0); }
+}

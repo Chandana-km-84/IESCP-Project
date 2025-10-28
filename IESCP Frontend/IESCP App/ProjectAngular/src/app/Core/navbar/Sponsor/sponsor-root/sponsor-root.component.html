@@ -1,0 +1,17 @@
+<app-sponsor-navbar></app-sponsor-navbar>
+
+<div class="content-container">
+  <div [ngSwitch]="true">
+    <ng-container *ngSwitchCase="true">
+      <ng-container *ngIf="isSponsorHome">
+        <app-sponsor-dashboard></app-sponsor-dashboard>
+      </ng-container>
+      <ng-container *ngIf="isSponsorCampaign">
+        <app-sponsor-campaigns></app-sponsor-campaigns>
+      </ng-container>
+      <ng-container *ngIf="isSponsorProfile">
+      </ng-container>
+    </ng-container>
+  </div>
+  <router-outlet></router-outlet>
+</div>

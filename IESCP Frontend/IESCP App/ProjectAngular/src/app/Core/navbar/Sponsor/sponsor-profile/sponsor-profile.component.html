@@ -1,0 +1,58 @@
+<div class="container" style="margin-bottom: 50px;">
+    <pre>     </pre>
+</div>
+    <div *ngIf="profile" class="container mt-5">
+      <h2>Sponsor Profile</h2>
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title">{{ profile.sponsorName | uppercase}}</h1>
+      <p class="card-text"><strong>Email:</strong> {{ profile.email }}</p>
+      <p class="card-text"><strong>Industry:</strong> {{ profile.industry }}</p>
+      <p class="card-text"><strong>Company:</strong> {{ profile.company }}</p>
+      <p class="card-text"><strong>Contact:</strong> {{ profile.phoneNumber }}</p>
+
+      <button class="btn btn-primary" (click)="openEditModal()">Edit</button>
+    </div>
+  </div>
+</div>
+  
+  <!-- Edit Profile Modal -->
+  <div *ngIf="isEditModalOpen" class="modal fade show" tabindex="-1" style="display: block;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Profile</h5>
+          <button type="button" class="close" (click)="closeEditModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" [(ngModel)]="editProfile.sponsorName" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" [(ngModel)]="editProfile.email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number:</label>
+              <input type="text" id="phoneNumber" [(ngModel)]="editProfile.phoneNumber" name="phoneNumber" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="industry">Industry:</label>
+              <input type="text" id="industry" [(ngModel)]="editProfile.industry" name="industry" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company:</label>
+              <input type="text" id="company" [(ngModel)]="editProfile.company" name="company" class="form-control" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="budget">Budget:</label>
+                <input type="number" id="budget" [(ngModel)]="editProfile.budget" name="budget" class="form-control" required>
+              </div> -->
+            <button type="submit" class="btn btn-success">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>

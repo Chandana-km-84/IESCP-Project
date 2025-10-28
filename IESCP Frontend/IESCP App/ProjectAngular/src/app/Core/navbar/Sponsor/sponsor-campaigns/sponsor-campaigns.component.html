@@ -1,0 +1,131 @@
+<BODY><div class="container" style="margin-bottom: 50px;">
+    <pre>     </pre>
+</div>
+
+  <div class="container mt-5">
+    <h2>Campaigns</h2>
+    <button class="btn btn-primary mb-3" (click)="openAddCampaignModal()">Add New Campaign</button>
+    <div class="row">
+      <div *ngFor="let campaign of campaigns" class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">{{ campaign.campaignName }}</h2>
+            <h4 class="card-text">{{ campaign.description }}</h4>
+            <p><strong>Start Date:</strong> {{ campaign.start_date | date }}</p>
+            <p><strong>End Date:</strong> {{ campaign.end_date | date }}</p>
+            <p><strong>Budget:</strong> {{ campaign.budget }}</p>
+            <p><strong>Visibility:</strong> {{ campaign.visibility }}</p>
+            <p><strong>Company Niche:</strong> {{ campaign.compNiche }}</p>
+            <p><strong>Goals:</strong> {{ campaign.goals }}</p>
+            <button class="btn btn-secondary mt-2 me-3" (click)="openEditCampaignModal(campaign)">Edit</button>
+            <button class="btn btn-info mt-2 me-3" (click)="navigateToAdRequests(campaign.campaignId)">View Ad Requests</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Add Campaign Modal -->
+  <div *ngIf="isAddCampaignModalOpen" class="modal fade show" tabindex="-1" style="display: block;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add New Campaign</h5>
+          <button type="button" class="close" (click)="closeAddCampaignModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="campaignName">Campaign Name:</label>
+              <input type="text" id="campaignName" [(ngModel)]="newCampaign.campaignName" name="campaignName" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="description">Description:</label>
+              <input type="text" id="description" [(ngModel)]="newCampaign.description" name="description" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="start_date">Start Date:</label>
+              <input type="date" id="start_date" [(ngModel)]="newCampaign.start_date" name="start_date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="end_date">End Date:</label>
+              <input type="date" id="end_date" [(ngModel)]="newCampaign.end_date" name="end_date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget:</label>
+              <input type="number" id="budget" [(ngModel)]="newCampaign.budget" name="budget" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="visibility">Visibility:</label>
+              <select id="visibility" [(ngModel)]="newCampaign.visibility" name="visibility" class="form-control" required>
+                <option value="public">Public</option>
+                <option value="private">Private</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="compNiche">Company Niche:</label>
+              <input type="text" id="compNiche" [(ngModel)]="newCampaign.compNiche" name="compNiche" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="goals">Goals:</label>
+              <input type="text" id="goals" [(ngModel)]="newCampaign.goals" name="goals" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Edit Campaign Modal -->
+  <div *ngIf="isEditCampaignModalOpen" class="modal fade show" tabindex="-1" style="display: block;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Campaign</h5>
+          <button type="button" class="close" (click)="closeEditCampaignModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="onEditSubmit()">
+            <div class="form-group">
+              <label for="editCampaignName">Campaign Name:</label>
+              <input type="text" id="editCampaignName" [(ngModel)]="editCampaign.campaignName" name="editCampaignName" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="editDescription">Description:</label>
+              <input type="text" id="editDescription" [(ngModel)]="editCampaign.description" name="editDescription" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="editStartDate">Start Date:</label>
+              <input type="date" id="editStartDate" [(ngModel)]="editCampaign.start_date" name="editStartDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="editEndDate">End Date:</label>
+              <input type="date" id="editEndDate" [(ngModel)]="editCampaign.end_date" name="editEndDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="editBudget">Budget:</label>
+              <input type="number" id="editBudget" [(ngModel)]="editCampaign.budget" name="editBudget" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="editVisibility">Visibility:</label>
+              <select id="editVisibility" [(ngModel)]="editCampaign.visibility" name="editVisibility" class="form-control" required>
+                <option value="public">Public</option>
+                <option value="private">Private</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="editCompNiche">Company Niche:</label>
+              <input type="text" id="editCompNiche" [(ngModel)]="editCampaign.compNiche" name="editCompNiche" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="editGoals">Goals:</label>
+              <input type="text" id="editGoals" [(ngModel)]="editCampaign.goals" name="editGoals" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </BODY>

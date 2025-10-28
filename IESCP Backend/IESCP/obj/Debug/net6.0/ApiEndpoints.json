@@ -1,0 +1,436 @@
+[
+  {
+    "ContainingType": "IESCP.Controllers.AdminController",
+    "Method": "ApproveSponsor",
+    "RelativePath": "api/Admin/approveSponsor/{sponsorId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sponsorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.AdminController",
+    "Method": "FlagAdRequest",
+    "RelativePath": "api/Admin/flagAdRequest/{adRequestId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adRequestId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.AdminController",
+    "Method": "FlagCampaign",
+    "RelativePath": "api/Admin/flagCampaign/{campaignId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "campaignId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.AdminController",
+    "Method": "FlagUser",
+    "RelativePath": "api/Admin/flagUser/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.AdminController",
+    "Method": "GetUnapprovedSponsors",
+    "RelativePath": "api/Admin/getUnapprovedSponsors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.AdminController",
+    "Method": "Login",
+    "RelativePath": "api/Admin/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.Authentication.LoginAdminModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.AdminController",
+    "Method": "UnflagAdRequest",
+    "RelativePath": "api/Admin/unflagAdRequest/{adRequestId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adRequestId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.AdminController",
+    "Method": "UnflagCampaign",
+    "RelativePath": "api/Admin/unflagCampaign/{campaignId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "campaignId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.AdminController",
+    "Method": "UnflagUser",
+    "RelativePath": "api/Admin/unflagUser/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.AdminController",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/Admin/verifyOtp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.Authentication.VerifyOTPModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.InfluencerController",
+    "Method": "Dashboard",
+    "RelativePath": "api/Influencer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.InfluencerController",
+    "Method": "EditInfluencerDetails",
+    "RelativePath": "api/Influencer/edit-Profile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.Authentication.RegisterInfluencerModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.InfluencerController",
+    "Method": "Login",
+    "RelativePath": "api/Influencer/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "IESCP.Models.Authentication.LoginInfluencerModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.InfluencerController",
+    "Method": "GetPendingAdRequests",
+    "RelativePath": "api/Influencer/pending-adrequests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.InfluencerController",
+    "Method": "Register",
+    "RelativePath": "api/Influencer/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.Authentication.RegisterInfluencerModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.InfluencerController",
+    "Method": "SearchCampaigns",
+    "RelativePath": "api/Influencer/search-campaigns",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.InfluencerController",
+    "Method": "UpdateAdStatus",
+    "RelativePath": "api/Influencer/updateStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.InfuencerDashboard.UpdateAdStatusModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.SponsorController",
+    "Method": "Dashboard",
+    "RelativePath": "api/Sponsor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.SponsorController",
+    "Method": "CreateAdRequestModel",
+    "RelativePath": "api/Sponsor/CreateAdRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.SponsorDashboard.CreateAdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.SponsorController",
+    "Method": "CreateCampaignModel",
+    "RelativePath": "api/Sponsor/CreateCampaign",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.SponsorDashboard.CreateCampaignModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.SponsorController",
+    "Method": "EditAdRequest",
+    "RelativePath": "api/Sponsor/edit-adrequest/{adRequestId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adRequestId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.SponsorDashboard.CreateAdRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.SponsorController",
+    "Method": "EditCampaign",
+    "RelativePath": "api/Sponsor/edit-campaign/{campaignId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "campaignId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.SponsorDashboard.CreateCampaignModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.SponsorController",
+    "Method": "EditSponsorDetails",
+    "RelativePath": "api/Sponsor/edit-Profile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.Authentication.RegisterSponsorModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.SponsorController",
+    "Method": "GetAdRequestByCampaignId",
+    "RelativePath": "api/Sponsor/getAdRequestByCampaignId/{campaignId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "campaignId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.SponsorController",
+    "Method": "Login",
+    "RelativePath": "api/Sponsor/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "IESCP.Models.Authentication.LoginSponsorModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.SponsorController",
+    "Method": "MakePaymentForAdRequest",
+    "RelativePath": "api/Sponsor/makePaymentForAdRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.SponsorDashboard.MakePaymentModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.SponsorController",
+    "Method": "RateInfluencerForAdRequest",
+    "RelativePath": "api/Sponsor/rateInfluencerForAdRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.SponsorDashboard.RateInfluencerModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IESCP.Controllers.SponsorController",
+    "Method": "Register",
+    "RelativePath": "api/Sponsor/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IESCP.Models.Authentication.RegisterSponsorModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

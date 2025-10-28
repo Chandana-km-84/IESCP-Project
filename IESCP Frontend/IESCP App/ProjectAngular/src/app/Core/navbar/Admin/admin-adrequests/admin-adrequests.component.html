@@ -1,0 +1,18 @@
+<div class="container mt-4">
+    <h2>Admin Ad Requests</h2>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let adRequest of adRequests">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">{{ adRequest.adName }}</h5>
+            <p class="card-text">Description: {{ adRequest.adDescription }}</p>
+            <p class="card-text">Amount: {{ adRequest.amount }}</p>
+            <p class="card-text">Status: {{ adRequest.status }}</p>
+            <p class="card-text">Flagged: {{ adRequest.isFlagged ? 'Yes' : 'No' }}</p>
+            <button *ngIf="!adRequest.isFlagged" class="btn btn-danger" (click)="flagAdRequest(adRequest.adId)">Flag</button>
+            <button *ngIf="adRequest.isFlagged" class="btn btn-success" (click)="unflagAdRequest(adRequest.adId)">Unflag</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

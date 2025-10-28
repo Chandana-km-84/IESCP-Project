@@ -1,0 +1,20 @@
+<div style="margin-bottom: 60px;">
+    <pre>    </pre>
+</div>
+<div class="container">
+    <div class="dashboard">
+      <div class="card" *ngFor="let campaign of campaigns" >
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-content" (click)="showAdRequests(campaign.campaignId)">
+              <h3>{{ campaign.campaignName }}</h3>
+              <p>{{ campaign.description }}</p>
+              <p>Budget: {{ campaign.budget }}</p>
+              <p>Start Date: {{ campaign.start_date | date }}</p>
+              <p>End Date: {{ campaign.end_date | date }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

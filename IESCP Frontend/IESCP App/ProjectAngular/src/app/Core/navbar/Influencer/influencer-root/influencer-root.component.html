@@ -1,0 +1,12 @@
+<app-influencer-navbar></app-influencer-navbar>
+
+<div class="content-container">
+  <div [ngSwitch]="true">
+    <ng-container *ngSwitchCase="true">
+      <ng-container *ngIf="isInfluencerHome">
+        <app-influencer-dashboard></app-influencer-dashboard>
+      </ng-container>
+    </ng-container>
+  </div>
+  <router-outlet></router-outlet>
+</div>

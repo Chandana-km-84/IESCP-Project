@@ -1,0 +1,47 @@
+
+
+:host {
+    display: block;
+    background-color: #e0f7fa; /* Light cyan background color */
+    padding: 20px;
+}
+
+.container {
+    background-color: #e0f7fa;
+    padding: 20px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+}
+
+.card-front {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card-front:hover {
+    transform: translateY(-10px);
+}
+
+.card-content {
+    padding: 20px;
+    background-color: #e0f7fa;
+    background-image: linear-gradient(rgb(185, 235, 235),rgb(244, 184, 141));
+}
+
+.card-content h3 {
+    color: #333;
+}
+
+.card-content p {
+    color: #666;
+}

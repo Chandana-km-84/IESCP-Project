@@ -1,0 +1,381 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\controllers\\sponsorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:controllers\\sponsorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\controllers\\influencercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:controllers\\influencercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\helper\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:helper\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\models\\authentication\\verifyotpmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:models\\authentication\\verifyotpmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\models\\authentication\\registersponsormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:models\\authentication\\registersponsormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\models\\authentication\\logininfluencermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:models\\authentication\\logininfluencermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\models\\authentication\\loginadminmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:models\\authentication\\loginadminmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\repositories\\interface\\isponsorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:repositories\\interface\\isponsorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\repositories\\implementation\\sponsorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:repositories\\implementation\\sponsorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\services\\sponsorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:services\\sponsorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\services\\isponsorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:services\\isponsorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\models\\authentication\\registerinfluencermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:models\\authentication\\registerinfluencermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\models\\influencer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:models\\influencer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\models\\sponsor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:models\\sponsor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\iescp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:iescp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|c:\\users\\2368618\\downloads\\iescp backend\\iescp\\migrations\\20250128130836_created.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0449EDB3-76BA-431D-9718-5C6723633AA8}|IESCP.csproj|solutionrelative:migrations\\20250128130836_created.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 483,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VerifyOTPModel.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Authentication\\VerifyOTPModel.cs",
+              "RelativeDocumentMoniker": "Models\\Authentication\\VerifyOTPModel.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Authentication\\VerifyOTPModel.cs",
+              "RelativeToolTip": "Models\\Authentication\\VerifyOTPModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:13:28.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginInfluencerModel.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Authentication\\LoginInfluencerModel.cs",
+              "RelativeDocumentMoniker": "Models\\Authentication\\LoginInfluencerModel.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Authentication\\LoginInfluencerModel.cs",
+              "RelativeToolTip": "Models\\Authentication\\LoginInfluencerModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:13:23.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Helper\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "Helper\\JwtTokenGenerator.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Helper\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "Helper\\JwtTokenGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T18:11:22.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAmwB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:22:33.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InfluencerController.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Controllers\\InfluencerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InfluencerController.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Controllers\\InfluencerController.cs",
+              "RelativeToolTip": "Controllers\\InfluencerController.cs",
+              "ViewState": "AgIAAO4AAAAAAAAAAADwvzEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T05:11:30.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SponsorController.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Controllers\\SponsorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SponsorController.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Controllers\\SponsorController.cs",
+              "RelativeToolTip": "Controllers\\SponsorController.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAowCYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T04:57:16.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-24T07:07:23.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginAdminModel.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Authentication\\LoginAdminModel.cs",
+              "RelativeDocumentMoniker": "Models\\Authentication\\LoginAdminModel.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Authentication\\LoginAdminModel.cs",
+              "RelativeToolTip": "Models\\Authentication\\LoginAdminModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T16:13:21.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ISponsorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Repositories\\Interface\\ISponsorRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interface\\ISponsorRepository.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Repositories\\Interface\\ISponsorRepository.cs",
+              "RelativeToolTip": "Repositories\\Interface\\ISponsorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T03:55:59.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SponsorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Repositories\\Implementation\\SponsorRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementation\\SponsorRepository.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Repositories\\Implementation\\SponsorRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementation\\SponsorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T03:56:30.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SponsorService.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Services\\SponsorService.cs",
+              "RelativeDocumentMoniker": "Services\\SponsorService.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Services\\SponsorService.cs",
+              "RelativeToolTip": "Services\\SponsorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T03:58:26.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ISponsorService.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Services\\ISponsorService.cs",
+              "RelativeDocumentMoniker": "Services\\ISponsorService.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Services\\ISponsorService.cs",
+              "RelativeToolTip": "Services\\ISponsorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T03:57:56.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterSponsorModel.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Authentication\\RegisterSponsorModel.cs",
+              "RelativeDocumentMoniker": "Models\\Authentication\\RegisterSponsorModel.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Authentication\\RegisterSponsorModel.cs",
+              "RelativeToolTip": "Models\\Authentication\\RegisterSponsorModel.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAmwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T13:02:01.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250128130836_created.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Migrations\\20250128130836_created.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250128130836_created.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Migrations\\20250128130836_created.cs",
+              "RelativeToolTip": "Migrations\\20250128130836_created.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T13:08:36.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RegisterInfluencerModel.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Authentication\\RegisterInfluencerModel.cs",
+              "RelativeDocumentMoniker": "Models\\Authentication\\RegisterInfluencerModel.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Authentication\\RegisterInfluencerModel.cs",
+              "RelativeToolTip": "Models\\Authentication\\RegisterInfluencerModel.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA6wBwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T11:55:05.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:20:41.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvyIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T18:03:11.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Sponsor.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Sponsor.cs",
+              "RelativeDocumentMoniker": "Models\\Sponsor.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Sponsor.cs",
+              "RelativeToolTip": "Models\\Sponsor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T11:27:52.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IESCP.csproj",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\IESCP.csproj",
+              "RelativeDocumentMoniker": "IESCP.csproj",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\IESCP.csproj",
+              "RelativeToolTip": "IESCP.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-02T09:23:31.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Influencer.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Influencer.cs",
+              "RelativeDocumentMoniker": "Models\\Influencer.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Models\\Influencer.cs",
+              "RelativeToolTip": "Models\\Influencer.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T09:33:43.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-27T18:12:50.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\2368618\\Downloads\\IESCP Backend\\IESCP\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T04:45:57.728Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

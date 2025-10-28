@@ -1,0 +1,18 @@
+<div class="container mt-4">
+    <h2>Unapproved Sponsors</h2>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let sponsor of unapprovedSponsors">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">{{ sponsor.sponsorName }}</h5>
+            <p class="card-text">Industry: {{ sponsor.industry }}</p>
+            <p class="card-text">Company: {{ sponsor.company }}</p>
+            <p class="card-text">Email: {{ sponsor.email }}</p>
+            <p class="card-text">Phone: {{ sponsor.phoneNumber }}</p>
+            <p class="card-text">Flagged: {{ sponsor.isFlagged ? 'Yes' : 'No' }}</p>
+            <button class="btn btn-primary" (click)="approveSponsor(sponsor.userId)">Approve</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,36 @@
+body {
+    background: url('https://i0.wp.com/sched.com/wp-content/uploads/2023/11/Sponsor-bro.png?fit=1200%2C1200&ssl=1') no-repeat center center/cover;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    color: rgb(33, 24, 24);
+    text-align: center;
+    padding-top: 50px;
+}
+.content h1 {
+    font-size: 2.6em;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,22 @@
+
+<ng-container *ngIf="isHome && !isLogin && !isInfluencerHome && !isSponsorHome && !isAdminHome">
+  <app-navbar></app-navbar>
+  <app-home></app-home>
+  <router-outlet></router-outlet>
+</ng-container>
+
+<app-admin-login *ngIf="isAdmin"></app-admin-login>
+<app-influencer-login *ngIf="isInfluencer"></app-influencer-login>
+<app-sponsor-login *ngIf="isSponsor"></app-sponsor-login>
+
+<ng-container *ngIf="isSponsorHome">
+  <app-sponsor-root></app-sponsor-root>
+</ng-container>
+
+<ng-container *ngIf="isInfluencerHome">
+  <app-influencer-root></app-influencer-root>
+</ng-container>
+
+<ng-container *ngIf="isAdminHome">
+  <app-admin-dashboard></app-admin-dashboard>
+</ng-container>

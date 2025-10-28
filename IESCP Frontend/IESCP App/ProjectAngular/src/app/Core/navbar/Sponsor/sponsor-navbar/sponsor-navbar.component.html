@@ -1,0 +1,21 @@
+
+
+<nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">Sponsor</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a routerLink="/sponsor/home">Home</a></li>
+        <li><a routerLink="/sponsor/profile">Profile</a></li>
+        <li>
+          <a routerLink="/sponsor/campaign" class="desktop-item">Campaigns</a>
+        </li>
+        <li><a routerLink="/sponsor/influencers">Influencers</a></li>
+        <li><a routerLink="/sponsor/allAdrequest">AdRequests</a></li>
+        <li><a (click)="logout()">Logout</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>

@@ -1,0 +1,21 @@
+<div style="margin-bottom: 20px;">
+    <pre>    </pre>
+</div>
+
+<div class="container mt-5">
+    <h2>Pending Ad Requests</h2>
+    <div class="row">
+      <div *ngFor="let adRequest of adRequests" class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ adRequest.adName }}</h5>
+            <p class="card-text">{{ adRequest.adDescription }}</p>
+            <p><strong>Amount:</strong> {{ adRequest.amount }}</p>
+            <p><strong>Status:</strong> {{ adRequest.status }}</p>
+            <button class="btn btn-success" (click)="accept(adRequest.adId)">Accept</button>
+            <button class="btn btn-danger" (click)="reject(adRequest.adId)">Reject</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
